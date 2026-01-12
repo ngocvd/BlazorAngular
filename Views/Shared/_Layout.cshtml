@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+    <base href="~/" />
+
+	<link rel="stylesheet" href="~/dist/browser/styles.css">
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+	<script src="~/dist/browser/polyfills.js" type="module"></script>
+	<script src="~/dist/browser/main.js" type="module"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

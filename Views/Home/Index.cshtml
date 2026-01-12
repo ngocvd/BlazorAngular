@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Home";
+}
+<!-- Angular will bootstrap here -->
+<app-root>
+	<div class="loading">Loading Angular Application...</div>
+</app-root>
+
+<!-- Initialize Angular after Blazor is ready -->
+<script>
+	// Wait for Blazor to be ready
+	window.addEventListener('load', () => {
+	  // Initialize Angular after a short delay to ensure Blazor is loaded
+	  setTimeout(() => {
+		if (window['initializeAngular']) {
+		  window.initializeAngular();
+		}
+	  }, 1000);
+	});
+</script>
