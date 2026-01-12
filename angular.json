@@ -17,16 +17,28 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
+              },
+              // Example to copy a specific file directly to the root of your outputPath
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "./"
+              }
+            ],
             "allowedCommonJsDependencies": [ "apexcharts", "bezier-easing" ],
             "outputPath": {
-              "base": "./wwwroot/dist"
+              "base": "./wwwroot/dist",
+              "browser": "" // ← empty = no extra browser folder
             },
             "index": "src/index.html",
             "polyfills": [ "zone.js" ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [ "src/favicon.ico", "src/assets" ],
             "styles": [
               "src/styles.scss",
               "src/assets/scss/style.scss"
@@ -81,11 +93,23 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
+            "polyfills": [ "zone.js", "zone.js/testing" ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "./assets/"
+              },
+              // Example to copy a specific file directly to the root of your outputPath
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "./"
+              }
+            ],
+            "styles": [ "src/styles.scss" ],
             "scripts": []
           }
         }

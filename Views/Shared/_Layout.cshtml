@@ -6,16 +6,16 @@
     <title>@ViewData["Title"] - WebApplication1</title>
     <base href="~/" />
 
-	<link rel="stylesheet" href="~/dist/browser/styles.css">
+	<link rel="stylesheet" href="~/dist/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-	<script src="~/dist/browser/polyfills.js" type="module"></script>
-	<script src="~/dist/browser/main.js" type="module"></script>
+	<script src="~/dist/polyfills.js" type="module"></script>
+	<script src="~/dist/main.js" type="module"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
