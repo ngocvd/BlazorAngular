@@ -1,3 +1,4 @@
+angular.json
 "configurations": {
   "production": {
    ** "outputHashing": "none", // ← change from "all" to "none"**
