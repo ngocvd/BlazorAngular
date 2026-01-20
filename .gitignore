@@ -44,3 +44,5 @@ Thumbs.db
 /bin
 /obj
 /wwwroot/dist
+/wwwroot/3rdpartylicenses.txt
+/wwwroot/prerendered-routes.json
