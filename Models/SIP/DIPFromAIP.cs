@@ -38,7 +38,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Xml.Linq;
-namespace BlazorAngular.Models
+namespace BlazorAngular.Models.SIP
 {
   class DipGenerator
   {

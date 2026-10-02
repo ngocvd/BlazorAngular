@@ -4,7 +4,7 @@ using System.IO.Compression;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace BlazorAngular.Models
+namespace BlazorAngular.Models.SIP
 {
   class SIPFile
   {

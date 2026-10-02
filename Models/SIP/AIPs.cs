@@ -137,7 +137,7 @@ public class SipToAipProcessor
     var mets = new XDocument(
         new XElement("mets:mets",
             new XAttribute(XNamespace.Xmlns + "mets", "http://www.loc.gov/METS/"),
-            new XAttribute(XAttribute.Xmlns + "xsi", "http://www.w3.org/2001/XMLSchema-instance"),
+            new XAttribute(XNamespace.Xmlns + "xsi", "http://www.w3.org/2001/XMLSchema-instance"),
             // ... thêm các phần structMap, fileSec, amdSec (PREMIS), dmdSec...
             new XComment("METS generated from SIP → AIP conversion")
         ));

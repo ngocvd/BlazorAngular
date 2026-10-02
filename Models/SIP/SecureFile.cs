@@ -9,7 +9,7 @@ using System.Linq;
 
 //By AI, chưa kiểm tra đc
 
-namespace BlazorAngular.SecureFile
+namespace BlazorAngular.Models.SIP
 {
 //  Here is a secure and practical approach in C# (.NET 6/7/8+) that does the following:
 
