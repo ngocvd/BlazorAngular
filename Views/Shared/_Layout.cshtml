@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - WebApplication1</title>
     <base href="~/" />
 
-	<link rel="stylesheet" href="~/dist/styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/dist/styles.css"  asp-append-version="true">
 </head>
 <body>
     <div class="container-fluid">
@@ -14,8 +14,8 @@
             @RenderBody()
         </main>
     </div>
-	<script src="~/dist/polyfills.js" asp-append-version="true"></script>
-    <script src="~/dist/main.js" asp-append-version="true"></script>
+	<script src="~/dist/polyfills.js" type="module" asp-append-version="true"></script>
+	<script src="~/dist/main.js" type="module" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
