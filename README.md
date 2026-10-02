@@ -1,4 +1,4 @@
-angular.json
+**angular.json**
 "configurations": {
   "production": {
    ** "outputHashing": "none", // ← change from "all" to "none"**
@@ -23,9 +23,9 @@ angular.json
     "sourceMap": true
   }
 
-  withHashLocation
+**  withHashLocation**
 
-in app.config.ts
+**in app.config.ts**
 import {
   provideRouter,
   withComponentInputBinding,
